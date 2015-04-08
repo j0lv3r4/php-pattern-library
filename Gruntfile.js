@@ -47,7 +47,8 @@ module.exports = function(grunt) {
         livereload: {
           livereload: true,
           files: [
-            '<%= config.dev %>/{,*/}*.php',
+            '<%= config.dev %>/*.php',
+            '<%= config.dev %>/includes/*.php',
             '<%= config.dev %>/{,*/}*.html',
             '<%= config.dev %>/js/{,*/}*.js',
             '<%= config.dev %>/css/{,*/}*.css'
