@@ -1,39 +1,38 @@
 /*
- * Feedback 
+ * Feedback
  */
 
 [class^="alert-"] {
 	margin: 1em 0;
 	padding: 0.618em;
 	border: 1px solid;
-	border-bottom-width: 3px;
 
 	p {
 		margin: 0;
 	}
 }
 
-@mixin alert-generator($color) {
-	border-color: lighten($color, 30%);
-	background-color: lighten($color, 45%);
+@mixin alert($wb-color) {
+	border-color: lighten($wb-color, 30%);
+	background-color: lighten($wb-color, 45%);
 
 	strong {
-		color: $color;
+		color: $wb-color;
 	}
 }
 
 .alert-information {
-	@include alert-generator($color-information);
+	@include alert($wb-feedback-color-information);
 }
 
 .alert-error {
-	@include alert-generator($color-error);
+	@include alert($wb-feedback-color-error);
 }
 
 .alert-warning {
-	@include alert-generator($color-warning);
+	@include alert($wb-feedback-color-warning);
 }
 
 .alert-success {
-	@include alert-generator($color-success);
+	@include alert($wb-feedback-color-success);
 }

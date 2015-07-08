@@ -1,74 +1,103 @@
-// General
+// Scaffold
+//
+// Global styles.
 
-$base-unit: 'em' !default;
-$site-width: 50#{$base-unit};
-$baseline: 1#{$base-unit};
-$bower: "../bower_components/";
+$wb-base-unit: 'em' !default;
+$wb-baseline: 1#{$wb-base-unit} !default;
+$wb-grid-gutter: 1% !default;
+$wb-container-width: 61.25#{$wb-base-unit} !default; // 980px
+$wb-body-bg: #fff !default;
 
-// Color
+// Colors
 
-$color-base: #333;
-$color-link: #619CCF;
-$color-highlight: #EEEE8F;
-$color-muted: lighten($color-base, 55%);
-$color-code: brown;
+// Brand colors
+$wb-brand-primary: blue;
+
+// Custom colors
+$wb-gray-base: #000;
+$wb-gray-darker: #222;
+$wb-gray-dark: #333;
+$wb-gray: #555;
+$wb-gray-light: #777;
+$wb-gray-lighter: #eee;
 
 // Typography
 
-$font-size-base: 16px;
-$line-height: 1.618;
-$margin-top: $baseline;
-$margin-bottom: $baseline;
+$wb-body-font: 'PT Sans', sans-serif;
+$wb-mono-font: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
 
-$font-sans-regular: 'PT Sans', sans-serif;
-$font-serif-regular: 'Georgia', serif;
-$font-monospace-regular: 'Menlo', Inconsolata, Consolas, Monaco, monospace;
+$wb-font-size: 16px;
 
-$headings-color: $color-base;
-$headings-margin-bottom: $margin-bottom;
-$headings-line-height: 1.125;
+$wb-line-height: 1.618 !default;
 
-$font-size-h1: 2.225#{$base-unit};
-$font-size-h2: 1.718#{$base-unit};
-$font-size-h3: 1.375#{$base-unit};
-$font-size-h4: 1#{$base-unit};
-$font-size-h5: 1#{$base-unit};
-$font-size-h6: 1#{$base-unit};
+$wb-text-color: #333 !default;
+$wb-text-margin-top: $wb-baseline !default;
+$wb-text-margin-bottom: $wb-baseline !default;
 
-$indented-paragraphs: false !default;
+$wb-link-color: $wb-brand-primary !default;
+$wb-link-decoration: none;
+$wb-link-hover-decoration: underline;
+$wb-link-hover-color: darken($wb-link-color, 15%) !default;
 
-// Grid
+$wb-font-size-h1: 2.225#{$wb-base-unit};
+$wb-font-size-h2: 1.718#{$wb-base-unit};
+$wb-font-size-h3: 1.375#{$wb-base-unit};
+$wb-font-size-h4: 1#{$wb-base-unit};
+$wb-font-size-h5: 1#{$wb-base-unit};
+$wb-font-size-h6: 1#{$wb-base-unit};
 
-$column-count: 12;
-$gutter: 3%;
+$wb-headings-font: inherit;
+$wb-headings-font-weight: 500;
+$wb-headings-line-height: 1.125;
+$wb-headings-color: $wb-text-color;
+$wb-headings-margin-bottom: $wb-text-margin-bottom;
 
-// Button
+// Border radius
 
-$button-roundness: 0.236#{$base-unit};
+$wb-border-radius-base: 4px;
+$wb-border-radius-large: 6px;
+$wb-border-radius-small: 3px;
 
-$button-small-font-size: 0.818#{$base-unit};
-$button-large-font-size: 1.125#{$base-unit};
+// Buttons
 
-$button-default-bg: #bbb;
-$button-default-text-color: #333;
+$wb-btn-border-radius: $wb-border-radius-base;
 
-$button-primary-bg: #0078E7;
-$button-primary-text-color: lighten($button-primary-bg, 50%);
+$wb-btn-small-font-size: 0.818#{$wb-base-unit};
+$wb-btn-large-font-size: 1.125#{$wb-base-unit};
 
-// Form
+$wb-btn-default-bg: #bbb;
+$wb-btn-default-color: #333;
+$wb-btn-default-border: #ccc;
 
-$field-border-color: #ccc;
-$field-error-color: brown;
-$field-required-color: brown;
+$wb-btn-primary-bg: #0078E7;
+$wb-btn-primary-color: lighten($wb-btn-primary-bg, 50%);
+$wb-btn-primary-border: lighten($wb-btn-primary-bg, 20%);
+
+// Forms
+
+$wb-form-display: block;
+
+$wb-form-border-radius: 5px;
+$wb-form-border-width: 1px;
+$wb-form-border-style: solid;
+$wb-form-border-color: rgb(200, 200, 200);
+
+$wb-form-input-height: 40px;
+$wb-form-input-width: 100%;
+$wb-form-input-max-width: 400px;
+$wb-form-input-bg-color: #fff;
+$wb-form-focus-bg-color: rgb(220, 220, 220);
+$wb-form-focus-border-color: inherit;
+$wb-form-focus-font-color: inherit;
 
 // Icons
 
-$icon-roundness: 3.778px;
-$icon-border-color: #333;
+$wb-icon-roundness: 3.778px;
+$wb-icon-border-color: #333;
 
 // Feedback
 
-$color-information: #439ccf;
-$color-error: #e72915;
-$color-warning: #d35400;
-$color-success: #74a730;
+$wb-feedback-color-information: #439ccf;
+$wb-feedback-color-error: #e72915;
+$wb-feedback-color-warning: #d35400;
+$wb-feedback-color-success: #74a730;

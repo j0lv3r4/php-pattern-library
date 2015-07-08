@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Pattern library</title>
+		<title>PHP Starter</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" href="/favicon.ico">
@@ -17,18 +17,12 @@
 		<!-- build:css(<%= config.dev %>/) css/style.min.css -->
 		<link rel="stylesheet" href="css/style.css">
 		<!-- endbuild -->
-
-		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/github.min.css">
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script>
-		<script>hljs.initHighlightingOnLoad();</script>
 	</head>
 	<body>
 
-    <header class="demo-masthead">
+    <header class="masthead">
       <div class="container">
-        <h1 class="site-title">Personal Style Guide</h1>
-        <p class="site-description">Project by <a href="http://twitter.com/thinkxl/">@thinkxl</a></p>
-
+        <h1 class="site-title">PHP Starter</h1>
       </div>
-    </header>
+    </header> <!-- .masthead -->
 

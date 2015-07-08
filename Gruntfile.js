@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         },
         sass: {
           files: '<%= config.dev %>/sass/{,*/}*.scss',
-          tasks: ['libsass', 'autoprefixer']
+          tasks: ['sass', 'autoprefixer']
         },
         livereload: {
           livereload: true,
@@ -56,9 +56,9 @@ module.exports = function(grunt) {
         }
       },
 
-      libsass: {
+      sass: {
         options: {
-          trace: true
+          sourceMap: true
         },
         dev: {
           files: {
